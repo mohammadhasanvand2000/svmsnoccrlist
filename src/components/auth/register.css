@@ -1,0 +1,119 @@
+/* فونت استاندارد برای صفحات با عرض بیشتر از 768 پیکسل */
+@font-face {
+  font-family: 'Vazir';
+  src: url('../../bace-style/fonts/Vazir.eot');
+  src: url('../../bace-style/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('../../bace-style/fonts/Vazir.woff2') format('woff2'),
+       url('../../bace-style/fonts/Vazir.woff') format('woff'),
+       url('../../bace-style/fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.my-component {
+  font-family: 'Vazir', sans-serif;
+  background-image: url('./img/image.jpg');
+  background-size: cover;
+  margin: 0; /* حذف حاشیه‌های صفحه */
+  padding: 0; /* حذف پدینگ‌های صفحه */
+  width: 100vw; /* استفاده از تمام عرض صفحه */
+  height: 100vh; /* استفاده از تمام ارتفاع صفحه */
+  font-size: 6vw;
+  font-size: 6vw;
+}
+/* بقیه قسمت‌های استایل همانند قبل باقی می‌مانند */
+
+/* @media query برای تغییر اندازه فونت در حالت‌های مختلف صفحه */
+@media (min-width: 576px) {
+  .my-component {
+    background-image: url('./img/image.jpg');
+    font-size: 20px; /* یک مقدار ثابت برای عرض‌های بزرگتر از 576px */
+  }
+}
+
+@media (min-width: 768px) {
+  .my-component {
+    background-image: url('./img/image.jpg');
+    background-size: cover;
+    font-size: 18px; /* یک مقدار ثابت برای عرض‌های بزرگتر از 768px */
+  }
+}
+
+.card {
+  font-family: 'Vazir', sans-serif;
+  background-color: #052c65;
+  margin-top: 50px;
+  margin: 50px auto;
+  max-width: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.card-header,
+.card-footer {
+  background-color: #052c65;
+  font-family: 'Vazir', sans-serif;
+  border-color: #ebeef4;
+  background-color: #012970;
+  color: #fff;
+  padding: 15px;
+}
+
+.card-title.h5 {
+  font-family: 'Vazir', sans-serif;
+  text-align: center;
+  padding: 20px 0 15px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-title span {
+  font-family: 'Vazir', sans-serif;
+  color: #899bbd;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-body {
+  font-family: 'Vazir', sans-serif;
+  border: #000;
+  box-sizing: border-box;
+  background-color: #000103;
+  text-align: center;
+  padding: 20px;
+}
+
+/* افزودن تصویر به عنوان پس‌زمینه فرم */
+.card {
+  font-family: 'Vazir', sans-serif;
+  background-size: cover;
+}
+
+/* افزودن رویه (Overlay) به تصویر پس‌زمینه */
+.card::before {
+  font-family: 'Vazir', sans-serif;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+}
+
+/* استایل تصویر در بخش‌های مختلف فرم */
+.card-img-top {
+  font-family: 'Vazir', sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-img-overlay {
+  font-family: 'Vazir', sans-serif;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
