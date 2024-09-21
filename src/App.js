@@ -23,24 +23,13 @@ function App() {
     <div>
       
       <React.StrictMode>
-        <AuthProvider>
-          
+      
             <Routes>
               <Route exact path="/" element={<First />} />
-              <Route path="/today" element={<AboutSection />} />
-              <Route path="/form/:cartId" element={<BuyForm />} />
-              <Route path="/test" element={<TestComponent />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/pro" element={<Product />} />
-              <Route path="/manual/" element={<Manual />} />
-              <Route path="/Setnewpassword/:uidb64/:token" element={<Setnewpassword />} />
-              <Route path="/forget" element={<Forget />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/logout" element={<Logout />} />
-              <Route path="/register" element={<Register />} />
+             
             </Routes>
           
-        </AuthProvider>
+        
       </React.StrictMode>
     </div>
   );
